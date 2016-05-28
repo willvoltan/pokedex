@@ -12,6 +12,9 @@
 		66E5AEED1CF9A619007CFA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E5AEEB1CF9A619007CFA5A /* Main.storyboard */; };
 		66E5AEEF1CF9A619007CFA5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E5AEEE1CF9A619007CFA5A /* Assets.xcassets */; };
 		66E5AEF21CF9A619007CFA5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E5AEF01CF9A619007CFA5A /* LaunchScreen.storyboard */; };
+		66E5AEFE1CF9AA60007CFA5A /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 66E5AEFD1CF9AA60007CFA5A /* music.mp3 */; };
+		66E5AF001CF9AAD1007CFA5A /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E5AEFF1CF9AAD1007CFA5A /* Pokemon Solid.ttf */; };
+		66E5AF021CF9AF9A007CFA5A /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 66E5AF011CF9AF9A007CFA5A /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		66E5AEEE1CF9A619007CFA5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66E5AEF11CF9A619007CFA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66E5AEF31CF9A619007CFA5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E5AEFD1CF9AA60007CFA5A /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		66E5AEFF1CF9AAD1007CFA5A /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
+		66E5AF011CF9AF9A007CFA5A /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		66E5AEE61CF9A619007CFA5A /* pokedex-by-voltan */ = {
 			isa = PBXGroup;
 			children = (
+				66E5AEFC1CF9AA4E007CFA5A /* Assets */,
+				66E5AEFB1CF9AA21007CFA5A /* Controller */,
+				66E5AEFA1CF9AA1B007CFA5A /* View */,
+				66E5AEF91CF9AA13007CFA5A /* Model */,
 				66E5AEE71CF9A619007CFA5A /* AppDelegate.swift */,
-				66E5AEE91CF9A619007CFA5A /* ViewController.swift */,
 				66E5AEEB1CF9A619007CFA5A /* Main.storyboard */,
 				66E5AEEE1CF9A619007CFA5A /* Assets.xcassets */,
 				66E5AEF01CF9A619007CFA5A /* LaunchScreen.storyboard */,
 				66E5AEF31CF9A619007CFA5A /* Info.plist */,
 			);
 			path = "pokedex-by-voltan";
+			sourceTree = "<group>";
+		};
+		66E5AEF91CF9AA13007CFA5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		66E5AEFA1CF9AA1B007CFA5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		66E5AEFB1CF9AA21007CFA5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66E5AEE91CF9A619007CFA5A /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		66E5AEFC1CF9AA4E007CFA5A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				66E5AEFF1CF9AAD1007CFA5A /* Pokemon Solid.ttf */,
+				66E5AEFD1CF9AA60007CFA5A /* music.mp3 */,
+				66E5AF011CF9AF9A007CFA5A /* pokemon.csv */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +164,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E5AF001CF9AAD1007CFA5A /* Pokemon Solid.ttf in Resources */,
+				66E5AEFE1CF9AA60007CFA5A /* music.mp3 in Resources */,
 				66E5AEF21CF9A619007CFA5A /* LaunchScreen.storyboard in Resources */,
 				66E5AEEF1CF9A619007CFA5A /* Assets.xcassets in Resources */,
+				66E5AF021CF9AF9A007CFA5A /* pokemon.csv in Resources */,
 				66E5AEED1CF9A619007CFA5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
