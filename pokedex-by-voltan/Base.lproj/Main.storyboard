@@ -331,7 +331,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="dTK-lN-UDs">
                                                 <rect key="frame" x="135" y="0.0" width="445" height="120"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -341,7 +341,7 @@
                                         <rect key="frame" x="0.0" y="180" width="580" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sL-Eo-IyC">
-                                                <rect key="frame" x="0.0" y="0.0" width="38" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="rmC-My-Gwp"/>
                                                 </constraints>
@@ -350,13 +350,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSF-mZ-2HK">
-                                                <rect key="frame" x="7" y="0.0" width="477" height="55"/>
+                                                <rect key="frame" x="69" y="0.0" width="519" height="55"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhL-on-SuH">
-                                                <rect key="frame" x="453" y="0.0" width="158" height="55"/>
+                                                <rect key="frame" x="557" y="0.0" width="54" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="158" id="H0T-1g-UQl"/>
                                                 </constraints>
