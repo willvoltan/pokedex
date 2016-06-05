@@ -66,7 +66,6 @@ class PokemonDetailVC: UIViewController {
         
         }
         
-    
     }
     
     @IBAction func backBtnPressed(sender: AnyObject) {
