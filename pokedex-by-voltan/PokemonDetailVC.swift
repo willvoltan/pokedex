@@ -26,6 +26,13 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var nextEvoImg: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var detail1: UILabel!
+    @IBOutlet weak var detail2: UILabel!
+    @IBOutlet weak var detail3: UILabel!
+    @IBOutlet weak var detail4: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +56,10 @@ class PokemonDetailVC: UIViewController {
         heightLbl.text = pokemon.height
         attackLbl.text = pokemon.attack
         pokedexIdLbl.text = "\(pokemon.pokedexId)"
+        detail1.text = "Height:"
+        detail2.text = "Weight:"
+        detail3.text = "Base Attack:"
+        detail4.text = "Defense:"
         
         if pokemon.nextEvolutionId == "" {
             evoLbl.text = "No Evolutions"
@@ -68,9 +79,16 @@ class PokemonDetailVC: UIViewController {
         
     }
     
+    @IBAction func segmentedPressed(sender: UISegmentedControl) {
+        
+    }
+    
+    
     @IBAction func backBtnPressed(sender: AnyObject) {
         
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
     
 }

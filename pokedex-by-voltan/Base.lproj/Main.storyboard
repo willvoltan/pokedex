@@ -308,6 +308,9 @@
                                     <segment title="Bio"/>
                                     <segment title="Moves"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedPressed:" destination="Smg-cu-p2i" eventType="valueChanged" id="fvM-LP-e1C"/>
+                                </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IZA-pd-Y8S">
                                 <rect key="frame" x="20" y="100" width="130" height="130"/>
@@ -643,12 +646,17 @@
                         <outlet property="currentEvoImg" destination="zAh-SF-dnv" id="jgV-aa-nhO"/>
                         <outlet property="defenseLbl" destination="yq4-g1-m1P" id="OUa-Kv-X7X"/>
                         <outlet property="descriptionLbl" destination="eVH-7r-L1C" id="Gz2-zp-YRq"/>
+                        <outlet property="detail1" destination="gYQ-Cu-Goh" id="VZv-WY-d5H"/>
+                        <outlet property="detail2" destination="ojD-kE-Fhq" id="YWp-4f-XeE"/>
+                        <outlet property="detail3" destination="1dQ-tQ-ojn" id="63o-ZO-Vxp"/>
+                        <outlet property="detail4" destination="hc1-lc-0qZ" id="Sbc-Zf-fsP"/>
                         <outlet property="evoLbl" destination="WTk-QE-tfH" id="sbO-vH-G3b"/>
                         <outlet property="heightLbl" destination="ad9-Oy-AX0" id="VUd-TQ-uPw"/>
                         <outlet property="mainImg" destination="IZA-pd-Y8S" id="zTj-tZ-1de"/>
                         <outlet property="nameLbl" destination="pHa-8e-VkC" id="MFC-ys-1Sd"/>
                         <outlet property="nextEvoImg" destination="4jq-DN-ymt" id="0hc-V6-oW7"/>
                         <outlet property="pokedexIdLbl" destination="ImN-mw-c8h" id="IX8-5F-jcc"/>
+                        <outlet property="segmentedControl" destination="2lN-9P-e68" id="eDr-AM-q7g"/>
                         <outlet property="typeLbl" destination="uJN-hI-iad" id="59h-Iu-hry"/>
                         <outlet property="weightLbl" destination="5aB-Uf-aCG" id="bxM-ke-PWe"/>
                     </connections>
