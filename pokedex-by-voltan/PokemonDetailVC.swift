@@ -80,7 +80,47 @@ class PokemonDetailVC: UIViewController {
     }
     
     @IBAction func segmentedPressed(sender: UISegmentedControl) {
-        
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            updateUI();
+        case 1:
+           
+            if pokemon.ability1 != "" {
+                heightLbl.text = pokemon.ability1
+                detail1.text = "Ability 1:"
+            }else{
+                detail1.text = ""
+                heightLbl.text = ""
+            }
+            
+            if pokemon.ability2 != "" {
+                weightLbl.text = pokemon.ability2
+                detail2.text = "Ability 2:"
+            }else{
+                detail2.text = ""
+                weightLbl.text = ""
+            }
+            
+            if pokemon.ability3 != "" {
+                attackLbl.text = pokemon.ability3
+                detail3.text = "Ability 3:"
+            }else{
+                detail3.text = ""
+                attackLbl.text = ""
+            }
+            
+            if pokemon.ability4 != "" {
+                defenseLbl.text = pokemon.ability4
+                detail4.text = "Ability 4:"
+            }else{
+                detail4.text = ""
+                defenseLbl.text = ""
+            }
+           
+            
+        default:
+            break;
+        }
     }
     
     

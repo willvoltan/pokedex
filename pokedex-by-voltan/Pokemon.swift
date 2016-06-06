@@ -23,7 +23,38 @@ class Pokemon {
     private var _nextEvolutionId: String!
     private var _nextEvolutionLvl: String!
     private var _pokemonUrl: String!
+    private var _ability1: String!
+    private var _ability2: String!
+    private var _ability3: String!
+    private var _ability4: String!
     
+    var ability1: String{
+        if _ability1 == nil{
+            _ability1 = ""
+        }
+        return _ability1
+    }
+    
+    var ability2: String{
+        if _ability2 == nil{
+            _ability2 = ""
+        }
+        return _ability2
+    }
+    
+    var ability3: String{
+        if _ability3 == nil{
+            _ability3 = ""
+        }
+        return _ability3
+    }
+    
+    var ability4: String{
+        if _ability4 == nil{
+            _ability4 = ""
+        }
+        return _ability4
+    }
     
     var nextEvolutionTxt: String {
         if _nextEvolutionTxt == nil{
@@ -179,8 +210,75 @@ class Pokemon {
                     }
                     
                 }
+                
+                if let abilities = dict["abilities"] as? [Dictionary<String, String>] where abilities.count < 1{
+                    
+                        if let name = abilities[0]["name"]{
+                            self._ability1 = name.capitalizedString
+                        }else{
+                            self._ability1 = ""
+                        }
+        
+                    }
+                if let abilities = dict["abilities"] as? [Dictionary<String, String>] where abilities.count == 2 {
+                    if let name = abilities[0]["name"]{
+                        self._ability1 = name.capitalizedString
+                    }else{
+                        self._ability1 = ""
+                    }
+                    if let name2 = abilities[1]["name"]{
+                        self._ability2 = name2.capitalizedString
+                    }else{
+                        self._ability2 = ""
+                    }
+                    
                 }
+                if let abilities = dict["abilities"] as? [Dictionary<String, String>] where abilities.count == 3 {
+                    if let name = abilities[0]["name"]{
+                        self._ability1 = name.capitalizedString
+                    }else{
+                        self._ability1 = ""
+                    }
+                    if let name2 = abilities[1]["name"]{
+                        self._ability2 = name2.capitalizedString
+                    }else{
+                        self._ability2 = ""
+                    }
+                    if let name3 = abilities[2]["name"] {
+                        self._ability3 = name3.capitalizedString
+                    }else{
+                        self._ability3 = ""
+                    }
+
+                }
+                if let abilities = dict["abilities"] as? [Dictionary<String, String>] where abilities.count == 4 {
+                    if let name = abilities[0]["name"]{
+                        self._ability1 = name.capitalizedString
+                    }else{
+                        self._ability1 = ""
+                    }
+                    if let name2 = abilities[1]["name"]{
+                        self._ability2 = name2.capitalizedString
+                    }else{
+                        self._ability2 = ""
+                    }
+                    if let name3 = abilities[2]["name"] {
+                        self._ability3 = name3.capitalizedString
+                    }else{
+                        self._ability3 = ""
+                    }
+                    if let name4 = abilities[3]["name"] {
+                        self._ability4 = name4.capitalizedString
+                    }else{
+                        self._ability4 = ""
+                    }
+
+                }
+                
+
             }
         }
+        
     }
+}
 
